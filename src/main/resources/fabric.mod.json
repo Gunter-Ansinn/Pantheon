@@ -2,30 +2,30 @@
 	"schemaVersion": 1,
 	"id": "modid",
 	"version": "${version}",
-	"name": "Example mod",
+	"name": "Pantheon",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Gunter Ansinn"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/pantheon/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"net.ansinn.pantheon.Pantheon"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"net.ansinn.pantheon.client.PantheonClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"pantheon.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "pantheon.client.mixins.json",
 			"environment": "client"
 		}
 	],
